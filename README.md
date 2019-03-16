@@ -1,5 +1,5 @@
 # SpaceConquer
 
 commit 형식
-이니셜+날짜
-ex. jw190316
+이니셜_날짜_시간
+ex. jw_190316_1743
