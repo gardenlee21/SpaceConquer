@@ -1,3 +1,5 @@
 # SpaceConquer
 
-com1 : gardenlee21 / 190316 / 1738
+commit 형식
+이니셜+날짜
+ex. jw190316
