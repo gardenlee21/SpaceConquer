@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:taxiapp/taxipage.dart';
-import 'package:taxiapp/chatpage.dart';
-import 'package:taxiapp/settingpage.dart';
+import 'package:spaceconquer/taxipage.dart';
+import 'package:spaceconquer/chatpage.dart';
+import 'package:spaceconquer/settingpage.dart';
 
 class TaxiView extends StatefulWidget {
   @protected

@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:taxiapp/taxiview.dart';
+import 'package:spaceconquer/taxiview.dart';
 
 
 void main() => runApp(MyApp());
