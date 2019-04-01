@@ -3,57 +3,68 @@ import 'package:spaceconquer/taxipage.dart';
 import 'package:spaceconquer/chatpage.dart';
 import 'package:spaceconquer/settingpage.dart';
 
-class TaxiView extends StatefulWidget {
+class TaxiView extends StatefulWidget 
+{
   @protected
   _TaxiViewState createState() => _TaxiViewState();
 }
 
-class _TaxiViewState extends State<TaxiView> {
+class _TaxiViewState extends State<TaxiView> 
+{
   //final _suggestions = <Container>[];
   int length=0;
   //final _biggerFont = const TextStyle(fontSize: 18.0);
   int _currentIndex = 0;
 
-  void onTabTapped(int index) {
+  void onTabTapped(int index) 
+  {
     setState((){
       _currentIndex = index;
     });
   }
 
-  final List<Widget> _children = [
+  final List<Widget> _children = 
+  [
     new TaxiPage(),
     new ChatPage(),
     new SettingPage()
   ];
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) 
+  {
     return new Scaffold(
       appBar: new AppBar(
         //title: new Text('대학택시'),
-        title: new Center(
+        title: new Center
+        (
           child: new Image.asset('assets/images/iconlong.png', fit: BoxFit.fitWidth)
         ),
         backgroundColor: const Color(0xff52abff),
-        ),
+      ),
 
       body : _children[_currentIndex],
 
-      bottomNavigationBar: new BottomNavigationBar(
+      bottomNavigationBar: new BottomNavigationBar
+      (
         onTap: onTabTapped,
         currentIndex: _currentIndex,
-        items: [
-          BottomNavigationBarItem(
+        items: 
+        [
+          BottomNavigationBarItem
+          (
             icon: const Icon(Icons.drive_eta),
             title: new Text('taxi'),
           ),
 
-          BottomNavigationBarItem(
+          BottomNavigationBarItem
+          (
             icon: const Icon(Icons.question_answer),
             title: new Text('chat'),
           ),
 
-          BottomNavigationBarItem(
+          BottomNavigationBarItem
+          (
             icon: const Icon(Icons.settings),
             title: new Text('setting'),
           )
@@ -247,6 +258,3 @@ void _onTapItem(BuildContext context, Contact post) {
 
   void buttonPressed(){}
   */
-
-
-
