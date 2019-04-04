@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 List<Contact> taxiPageContacts = [
   Contact(startend: '대전역->카이', time: '07:00'),
   Contact(startend: '카이->대전역', time: '21:00'),
@@ -43,11 +42,11 @@ class _TaxiPage extends State<TaxiPage>
                   children:
                   [
                     _createERB("${weekDay[0]}\n${today.day}", button1Pressed,1),
-                    _createERB("${weekDay[today.weekday+1]}\n${today.day+1}", button1Pressed,1),
-                    _createERB("${weekDay[today.weekday+2]}\n${today.day+2}", button1Pressed,1),
-                    _createERB("${weekDay[today.weekday+3]}\n${today.day+3}", button1Pressed,1),
-                    _createERB("${weekDay[today.weekday+4]}\n${today.day+4}", button1Pressed,1),
-                    _createERB("${weekDay[today.weekday+5]}\n${today.day+5}", button1Pressed,1)
+                    _createERB("${weekDay[(today.weekday+1)%7]}\n${today.day+1}", button1Pressed,1),
+                    _createERB("${weekDay[(today.weekday+2)%7]}\n${today.day+2}", button1Pressed,1),
+                    _createERB("${weekDay[(today.weekday+3)%7]}\n${today.day+3}", button1Pressed,1),
+                    _createERB("${weekDay[(today.weekday+4)%7]}\n${today.day+4}", button1Pressed,1),
+                    _createERB("${weekDay[(today.weekday+5)%7]}\n${today.day+5}", button1Pressed,1)
                   ]
                 )
               ], 
