@@ -44,7 +44,7 @@ class _TaxiViewState extends State<TaxiView>
       ),
 
       body : _children[_currentIndex],
-
+      
       bottomNavigationBar: new BottomNavigationBar
       (
         onTap: onTabTapped,

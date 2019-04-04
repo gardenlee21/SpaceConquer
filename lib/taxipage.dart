@@ -87,7 +87,11 @@ class _TaxiPage extends State<TaxiPage>
             )
         )
         ],
-      )
+      ),
+      floatingActionButton: new FloatingActionButton(
+        onPressed: () {},
+        child: Icon(Icons.add)
+      ),
     );
   }
 
