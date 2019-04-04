@@ -62,7 +62,7 @@ class _TaxiViewState extends State<TaxiView>
             icon: const Icon(Icons.question_answer),
             title: new Text('chat'),
           ),
-
+          
           BottomNavigationBarItem
           (
             icon: const Icon(Icons.settings),

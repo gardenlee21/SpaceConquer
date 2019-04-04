@@ -18,7 +18,7 @@ class TaxiPage extends StatefulWidget
 class _TaxiPage extends State<TaxiPage> 
 {
   var today = new DateTime.now();
-  List<String> weekDay = ["오늘", "월", "화", "수", "목", "금", "토", "일"];
+  List<String> weekDay = ["일", "월", "화", "수", "목", "금", "토", "오늘"];
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +41,7 @@ class _TaxiPage extends State<TaxiPage>
                 new Row(
                   children:
                   [
-                    _createERB("${weekDay[0]}\n${today.day}", button1Pressed,1),
+                    _createERB("${weekDay[7]}\n${today.day}", button1Pressed,1),
                     _createERB("${weekDay[(today.weekday+1)%7]}\n${today.day+1}", button1Pressed,1),
                     _createERB("${weekDay[(today.weekday+2)%7]}\n${today.day+2}", button1Pressed,1),
                     _createERB("${weekDay[(today.weekday+3)%7]}\n${today.day+3}", button1Pressed,1),
