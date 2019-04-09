@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 List<Contact> taxiPageContacts = [
   Contact(startend: '대전역->카이', time: '07:00'),
   Contact(startend: '카이->대전역', time: '21:00'),
@@ -7,7 +8,8 @@ List<Contact> taxiPageContacts = [
   Contact(startend: '카이->대전역', time: '15:00'),
   Contact(startend: '카이->대전역', time: '03:00'),
   Contact(startend: '카이->대전역', time: '20:00'),
-  Contact(startend: '카이->대전역', time: '01:00')
+  Contact(startend: '카이->대전역', time: '01:00'),
+  Contact(startend: '대전역->카이', time: '21:30')
 ];
 
 class TaxiPage extends StatefulWidget 
