@@ -25,29 +25,23 @@ class LoginPage extends StatelessWidget
     return Scaffold
     (
       backgroundColor: const Color(0xff52abff),
-      body: new Column 
-      (
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>
-        [
-          //logo,
-          Text('대학생 택시 동승 서비스', textAlign: TextAlign.center),
-          start,
-          login
-        ],
+      body: new Center(
+        child : new Column 
+        (
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>
+          [
+            //logo,
+            Text('대학생 택시 동승 서비스', textAlign: TextAlign.center),
+            start,
+            login
+          ],
+        )
       )
     );
   }
 
-
- /* final logo = Hero(
-    tag: 'hero',
-    child: CircleAvatar(
-      backgroundColor: Colors.transparent,
-      radius: 48.0,
-      child : Image.asset('images/icon.png')
-    )
-  );*/
+  //final logo =Image.asset('images/icon.png', height: 48.0, width: 48.0, fit: BoxFit.contain);
 }
 
 /* Login Page 2 */
@@ -63,18 +57,30 @@ class _LoginPage2 extends State<LoginPage2>
   @override
   void initState()
   {
-    _isButtonDisabled = false;
+    _isButtonDisabled = true;
   }
 
   Widget build (BuildContext context)
   {
+    Function buttonAction = (){Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => TaxiView()));};
     final start = RaisedButton
     (
       child: new Text("다음", textAlign: TextAlign.center),
-      onPressed: ()
-      {
-        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => TaxiView()));
-      },
+      onPressed: _isButtonDisabled ? null : buttonAction
+    );
+
+    void _activateButton()
+    {
+      _isButtonDisabled = false;
+      setState(() {});
+    }
+    final email = TextField
+    (
+      keyboardType: TextInputType.emailAddress, 
+      decoration: const InputDecoration(
+        hintText: 'your_email@kaist.ac.kr'
+      ),
+      onEditingComplete: _activateButton,
     );
 
     return Scaffold
@@ -93,10 +99,6 @@ class _LoginPage2 extends State<LoginPage2>
       )
     );
   }
-  final email = TextFormField
-    (
-    keyboardType: TextInputType.emailAddress
-    );
 
   final text = Text
   (

@@ -108,7 +108,7 @@ class _TaxiPage extends State<TaxiPage>
     child: RaisedButton
       (
         key:null, 
-        onPressed:onPressed,
+        onPressed: button1Pressed,
         color:const Color(0xffD3D3D3),
         child:new Text(text)
       ),
