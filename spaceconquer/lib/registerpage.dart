@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:spaceconquer/taxiview.dart';
 
 /* Register Page 2 */
 class RegisterPage2 extends StatefulWidget
