@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:spaceconquer/loginpage.dart';
+import 'package:spaceconquer/initpage.dart';
 
 
 void main() => runApp(MyApp());
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: '대학택시',
-      home: LoginPage(),
+      home: InitPage(),
       theme: ThemeData(fontFamily: 'NanumSquareRound'),
       // routes: RouteSe,
     ); 

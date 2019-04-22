@@ -49,6 +49,7 @@ flutter:
   assets:
   - assets/images/icon.png
   - assets/images/iconlong.png
+  - assets/images/icon_noguideline.png
 
   fonts:
     # Font weight value is defined as https://docs.flutter.io/flutter/dart-ui/FontWeight-class.html
