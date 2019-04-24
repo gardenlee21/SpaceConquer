@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:spaceconquer/taxiview.dart';
-import 'package:spaceconquer/loginpage.dart';
+//import 'package:spaceconquer/loginpage.dart';
 import 'package:spaceconquer/registerpage.dart';
 
 class InitPage extends StatelessWidget
@@ -30,13 +30,13 @@ class InitPage extends StatelessWidget
     );
 
     final text1 = Text('대학생 택시 동승 서비스',
-                  style: TextStyle(color: Colors.white, fontSize:20.0, fontFamily: "NanumSquareRound"),
+                  style: TextStyle(color: Colors.white, fontSize:20.0),
                   textAlign: TextAlign.center);
     final text2 = Text('지금까지 개설된 방 961개!',
-                style: TextStyle(color: Colors.yellow, fontSize:25.0, fontFamily: "NanumSquareRound"),
+                style: TextStyle(color: Colors.yellow, fontSize:25.0, fontWeight: FontWeight.bold),
                 textAlign: TextAlign.center);
     final text3 = Text('이미 계정이 있으시다면     ',
-                  style:TextStyle(color: Colors.white, fontSize:20.0, fontFamily: "NanumSquareRound"),
+                  style:TextStyle(color: Colors.white, fontSize:20.0),
                 textAlign: TextAlign.center);
 
     return Scaffold

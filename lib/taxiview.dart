@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:spaceconquer/taxipage.dart';
 import 'package:spaceconquer/chatpage.dart';
-import 'package:spaceconquer/settingpage.dart';
+import 'package:spaceconquer/hamburgerpage.dart';
 
 class TaxiView extends StatefulWidget 
 {
@@ -27,7 +27,7 @@ class _TaxiViewState extends State<TaxiView>
   [
     new TaxiPage(),
     new ChatPage(),
-    new SettingPage()
+    new HamburgerPage()
   ];
 
   @override

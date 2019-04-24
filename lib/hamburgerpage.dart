@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class SettingPage extends StatefulWidget {
+class HamburgerPage extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    return new _SettingPage();
+    return new _HamburgerPage();
   }
 }
 
-class _SettingPage extends State<SettingPage> {
+class _HamburgerPage extends State<HamburgerPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
