@@ -22,7 +22,7 @@ class InitPage extends StatelessWidget
     final start = new RaisedButton
     (
       onPressed: (){
-        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> RegisterPage2()));    
+        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> RegisterPage1()));    
       },
       color: Colors.white,
       child: const Text('시작하기',
